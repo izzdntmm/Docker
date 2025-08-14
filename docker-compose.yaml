@@ -21,7 +21,7 @@ services:
     restart: unless-stopped
     volumes:
       - .:/var/www
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./myapp/nginx.conf:/etc/nginx/conf.d/default.conf
     networks:
       - dokploy-network
     labels:
